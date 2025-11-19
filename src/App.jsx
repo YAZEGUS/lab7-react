@@ -12,14 +12,11 @@ function App() {
       <Navbar />
       
       <main className="content">
-        {/* Анімацію переходів можна додати пізніше */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
-          {/* Динамічний маршрут: :id означає змінну частину */}
           <Route path="/gallery/:id" element={<PhotoDetails />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Маршрут-пастка для всіх невідомих URL */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
