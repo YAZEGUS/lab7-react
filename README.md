@@ -1,16 +1,21 @@
-# React + Vite
+📸 Лабораторна робота №7: React Router та навігація
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📝 Опис проєкту
 
-Currently, two official plugins are available:
+SPA (Single Page Application) портфоліо фотографа з реалізованою маршрутизацією на базі react-router-dom. Проєкт дозволяє переглядати галерею робіт, переходити до деталей кожного фото та зв'язуватися з автором без перезавантаження сторінки.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Реалізований варіант (Варіант №4)
 
-## React Compiler
+"Портфоліо фотографа: Головна, Галерея, Зв’язок."
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚙️ Функціонал
 
-## Expanding the ESLint configuration
+Маршрутизація: Використання BrowserRouter, Routes, Route для навігації між сторінками Home, Gallery, Contact.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Динамічні маршрути: Реалізовано перехід /gallery/:id, де useParams використовується для відображення конкретного фото.
+
+Навігаційне меню: Компонент Navbar з використанням Link та підсвічуванням активної сторінки (useLocation).
+
+Обробка 404: Сторінка NotFound для неіснуючих маршрутів.
+
+Стилізація: Адаптивний дизайн, CSS Grid для галереї, анімації переходів.
